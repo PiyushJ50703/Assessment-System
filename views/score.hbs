@@ -1,0 +1,16 @@
+<nav aria-label="breadcrumb"></nav>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Score</li>
+  </ol>
+</nav>
+{{#each rows}}
+<div class="text-center">
+    <h3>Marks Scored</h3>
+    <div class="shadow p-5">
+        <div>
+            <h5>{{this.marks_obtained}} / {{this.total_marks}}</h5>
+        </div>
+    </div>
+</div>
+{{/each}}

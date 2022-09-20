@@ -1,0 +1,77 @@
+{{#if alert}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  {{alert}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+<div class="row">
+  <div class="col-6">
+    <h1>Questions</h1>
+  </div>
+  <div class="col-6 d-flex justify-content-end">
+    <a href="/addQuestion" type="button" class="btn btn-dark align-self-center m-1">+Add</a>
+    <a href="/editQuestion" type="button" class="btn btn-dark align-self-center m-1">Edit</a>
+    <a href="/removeQuestion" type="button" class="btn btn-dark align-self-center m-1">Remove</a>
+  </div>
+</div>
+
+{{!-- <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col" colspan="2">Questions</th>
+    </tr>
+  </thead>
+  <tbody>
+</table> --}}
+  {{#each rows}}
+    <form method="post" action="/" novalidate>
+      
+      {{!--Display question_id and  --}}
+      <div class="">
+        <h5><b>{{this.question_id}}. </b>{{this.question}}</h5>
+      </div>
+
+      {{!--use to send question ID with form --}}
+      <div class="mb-3" hidden>
+        <input type="text" id="question_id" class="form-control" name="question_id" value="{{this.question_id}}">
+      </div>
+      <div class="mb-3" hidden>
+        <input type="text" id="correct_answer" class="form-control" name="correct_answer" value="{{this.correct_answer}}">
+      </div>
+
+      <div class="form-check m-1">
+            <input class="form-check-input" type="radio" name="response" id="option1" value="option1">
+            <label class="form-check-label" for="option1">
+              {{this.option1}}
+            </label>
+      </div>
+      <div class="form-check m-1">
+            <input class="form-check-input" type="radio" name="response" id="option2" value="option2">
+            <label class="form-check-label" for="option2">
+              {{this.option2}}
+            </label>
+      </div>
+      <div class="form-check m-1">
+            <input class="form-check-input" type="radio" name="response" id="option3" value="option3">
+            <label class="form-check-label" for="option3">
+              {{this.option3}}
+            </label>
+      </div>
+      <div class="form-check m-1">
+            <input class="form-check-input" type="radio" name="options" id="option4" value="option4">
+            <label class="form-check-label" for="option4">
+              {{this.option4}}
+            </label>
+      </div>
+      <div class="mb-3">
+        <button type="submit" class="btn btn-sm  btn-dark">Record</button>
+      </div>
+    </form>
+  {{/each}}
+
+<div class="col-6 d-flex justify-content-end"></div>
+  <a href="/showScore" type="button" class="btn btn-success align-self-center m-1">Result</a>
+  <a href="/removeResponses" type="button" class="btn btn-danger align-self-center">Refresh</a>
+</div>
