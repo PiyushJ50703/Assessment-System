@@ -4,6 +4,21 @@ A Full stack web app powered by Node.js, Express, Mysql, HTML, CSS-Bootstrap and
 ## Tech Stack
 <ul>
   <li>Java Script</li>
+  <li>Node.js</li>
+  <li>Express</li>
+  <li>Express-Handlebars</li>
+  <li>MySql</li>
+  <li>BootStrap 5</li>
+</ul>
+
+## Features
+<ul>
+  <li>Create Questions</li>
+  <li>Edit Questions</li>
+  <li>Remove Questions</li>
+  <li>Answer Questions</li>
+  <li>View Scorecard</li>
+  <li>Refresh Responses for new round of Assessments</li>
 </ul>
 
 ## Home page
