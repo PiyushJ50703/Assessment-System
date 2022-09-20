@@ -10,34 +10,54 @@ A Full stack web app powered by Node.js, Express, Mysql, HTML, CSS-Bootstrap and
 <br/>
 
 -----
-
+<br/>
+<br/>
+<br/>
 
 
 ## 2
 ![home 2](https://user-images.githubusercontent.com/60563307/191303658-dcd45cf1-81ac-4034-82b6-41b35cd4f4cc.png)
+<br/>
+<br/>
+<br/>
 
 
 
 -----
+<br/>
+<br/>
+<br/>
 
 
 
 ## Result Page
 ![result](https://user-images.githubusercontent.com/60563307/191304130-12131ca5-86b7-400c-974b-e8873ef79f36.png)
+<br/>
+<br/>
+<br/>
 
 
 
 -----
+<br/>
+<br/>
+<br/>
 
 
 
 ## Add Questions
 ![add question](https://user-images.githubusercontent.com/60563307/191304222-33f2c95a-d59d-46d2-95fe-d29af88e08d1.png)
 
+<br/>
+<br/>
+<br/>
 
 
 -----
 
+<br/>
+<br/>
+<br/>
 
 
 ## Success alert
